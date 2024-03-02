@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "preview": "wrangler pages preview dist",
+    "preview": "wrangler pages dev dist",
 	"deploy": "wrangler pages deploy dist",
     "astro": "astro"
   },
