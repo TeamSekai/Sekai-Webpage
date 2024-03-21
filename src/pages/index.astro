@@ -5,8 +5,8 @@ import Card from '../components/Card.astro';
 
 <Layout title="Sekai make your life better.">
 	<main>
-		<h1><span class="wave">Sekai</span></h1>
-		<h2>-<span class="wave">Make your life better</span>-</h2>
+		<h1><span>Sekai</span></h1>
+		<h2>-Make your life <span class="wave">better</span>-</h2>
 		<!-- ごみ
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -40,9 +40,10 @@ import Card from '../components/Card.astro';
 
 <style>
 	.wave {
-		background: linear-gradient(to right,#ffffff,#ffffff,#ffffff,#ffffff,#ffffff,#4fc7ff,#ffffff,#ffffff) 0 / 200%;
+		/* background: linear-gradient(to right,#4fc7ff,#ffffff,#4fc7ff,#ffffff,#4fc7ff,#ffffff,#4fc7ff,#ffffff) 0 / 200%; */
+		background: linear-gradient(to right,#ffffff,#ffffff,#ffffff,#ffffff,#4fc7ff,#ffffff,#ffffff,#ffffff) 0 / 200%;
 		height: 100%;
-		animation: 2s a linear infinite;
+		animation: 3s a linear infinite;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		/*
