@@ -19,7 +19,30 @@ import '../styles/global.css';
 			</div>
 			<div class="item">
 				<h2>数え切れないほどのコマンド</h2>
-				<p>fuck</p>
+					<p>Sekai.Explodeには数え切れないほどの機能が搭載されています。</p>
+					<li>グローバルBAN機能</li>
+					<li>音楽再生(YouTubeにも対応!)</li>
+					<li>サーバー/ユーザー情報表示</li>
+					<li>nslookup,ipの情報表示</li>
+					<li>Minecraftサーバーのステータス確認</li>
+					<br>
+					等々...(現在も新しいコマンドを作成中です!)
+			</div>
+		</section>
+		<section class="content">
+			<div class="item">
+				<h2>数え切れないほどのコマンド</h2>
+					<p>Sekai.Explodeには数え切れないほどの機能が搭載されています。</p>
+					<li>グローバルBAN機能</li>
+					<li>音楽再生(YouTubeにも対応!)</li>
+					<li>サーバー/ユーザー情報表示</li>
+					<li>nslookup,ipの情報表示</li>
+					<li>Minecraftサーバーのステータス確認</li>
+					<br>
+					等々...(現在も新しいコマンドを作成中です!)
+			</div>
+			<div class="item">
+				<img src="assets/commands.jpg">
 			</div>
 		</section>
 		
@@ -109,22 +132,37 @@ import '../styles/global.css';
 	.content {
 		display: flex;
 		justify-content: center;
-		flex-wrap: nowrap;
+		/* flex-wrap: nowrap; */
+		flex-direction: row;
 		padding: 5px;
+		border: 3px solid yellow
 	}
-	
+
 	.content .item {
-		margin: 10%;
+		margin: 8%;
 	}
 	.content img {
-		width: 800px;
+		width: 30vw;
 		height: auto;
+		
+		
 	}
 	.item {
 		text-align: left;
 		white-space: nowrap;
+		border: 3px solid red;
 	}
 	.item p {
 		font-size: 1.25em;
 	}
+@media screen and (max-width: 480px) {
+	.content {
+		flex-direction: column;
+	}
+	.img {
+		width: 70vw;
+		height: auto;
+		justify-content: center;
+	}
+}
 </style>
