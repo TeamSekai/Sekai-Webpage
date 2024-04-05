@@ -34,6 +34,9 @@ import '../styles/global.css';
 		</section>
 		<section class="content">
 			<div class="item">
+				<img src="assets/commands.jpg">
+			</div>
+			<div class="item">
 				<h2>数え切れないほどのコマンド</h2>
 					<p>Sekai.Explodeには数え切れないほどの機能が搭載されています。</p>
 					<li>グローバルBAN機能</li>
@@ -43,9 +46,6 @@ import '../styles/global.css';
 					<li>Minecraftサーバーのステータス確認</li>
 					<br>
 					等々...(現在も新しいコマンドを作成中です!)
-			</div>
-			<div class="item">
-				<img src="assets/commands.jpg">
 			</div>
 		</section>
 		
@@ -179,8 +179,14 @@ import '../styles/global.css';
 		height: auto;
 		font-size: 1.25em;
 	}
+	.content:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
 @media screen and (max-width: 480px) {
 	.content {
+		flex-direction: column;
+	}
+	.content:nth-child(odd) {
 		flex-direction: column;
 	}
 	.content img {
