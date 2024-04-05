@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import '../styles/global.css';
 ---
 
 <Layout title="Sekai - Make your life better" description="Let's learn about Sekai.">
@@ -13,28 +13,16 @@ import Card from '../components/Card.astro';
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		-->
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://ringoxd.dev/"
-				title="null"
-				body="Nothing"
-			/>
-			<Card
-				href="https://ringoxd.dev/"
-				title="null"
-				body="Nothing"
-			/>
-			<Card
-				href="https://ringoxd.dev/"
-				title="null"
-				body="Nothing"
-			/>
-			<Card
-				href="https://ringoxd.dev/"
-				title="null"
-				body="Nothing"
-			/>
-		</ul>
+		<section class="content">
+			<div class="item">
+				<img src="assets/commands.jpg">
+			</div>
+			<div class="item">
+				<h2>数え切れないほどのコマンド</h2>
+				<p>fuck</p>
+			</div>
+		</section>
+		
 	</main>
 </Layout>
 
@@ -63,16 +51,6 @@ import Card from '../components/Card.astro';
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		/* background: #13151a; */
-		background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("/background.jpg");
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		/* background-size: 224px; */
 	}
 	.astro-a {
 		position: absolute;
@@ -127,5 +105,26 @@ import Card from '../components/Card.astro';
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
 		padding: 0;
+	}
+	.content {
+		display: flex;
+		justify-content: center;
+		flex-wrap: nowrap;
+		padding: 5px;
+	}
+	
+	.content .item {
+		margin: 10%;
+	}
+	.content img {
+		width: 800px;
+		height: auto;
+	}
+	.item {
+		text-align: left;
+		white-space: nowrap;
+	}
+	.item p {
+		font-size: 1.25em;
 	}
 </style>
