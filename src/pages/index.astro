@@ -54,17 +54,11 @@ import '../styles/global.css';
 
 <style>
 	.wave {
-		/* background: linear-gradient(to right,#4fc7ff,#ffffff,#4fc7ff,#ffffff,#4fc7ff,#ffffff,#4fc7ff,#ffffff) 0 / 200%; */
 		background: linear-gradient(to right,#ffffff,#ffffff,#ffffff,#ffffff,#4fc7ff,#ffffff,#ffffff,#ffffff) 0 / 200%;
 		height: 100%;
 		animation: 3s a linear infinite;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		/*
-		font-size: 100%;
-		font-weight: bold;
-		*/
-		/* display: inline-block;  */
   	}
   	@keyframes a{
 		100% { background-position: 200%; }
@@ -110,9 +104,7 @@ import '../styles/global.css';
 	h1 {
 		font-size: 3rem;
 		font-weight: 600;
-		/* line-height: 1; */
 		text-align: center;
-		/* margin-bottom: 1em; */
 	}
 	h2 {
 		font-size: 2rem;
@@ -157,7 +149,9 @@ import '../styles/global.css';
 		justify-content: center;
 		align-items: center;
 		flex-direction: row;
+		/* for dev(if need)
 		border: 3px solid yellow;
+		*/
 		justify-items: center;
 		width: auto;
 		height: auto;
@@ -171,8 +165,9 @@ import '../styles/global.css';
 	}
 	.item {
 		text-align: left;
-		/* white-space: nowrap; */
+		/* for dev(if need)
 		border: 3px solid red;
+		*/
 	}
 	.item h1, h2, p, li {
 		width: 40vw;
