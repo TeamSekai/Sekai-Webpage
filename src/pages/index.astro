@@ -5,8 +5,11 @@ import '../styles/global.css';
 
 <Layout title="Sekai - Make your life better" description="Let's learn about Sekai.">
 	<main>
-		<h1><span>Sekai</span></h1>
-		<h2>-Make your life <span class="wave">better</span>-</h2>
+		<section class="title">
+			<h1><span>Sekai</span></h1>
+			<h2>-Make your life <span class="wave">better</span>-</h2>
+		</section>
+		
 		<!-- ごみ
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -61,7 +64,7 @@ import '../styles/global.css';
 		font-size: 100%;
 		font-weight: bold;
 		*/
-		display: inline-block;
+		/* display: inline-block;  */
   	}
   	@keyframes a{
 		100% { background-position: 200%; }
@@ -74,6 +77,26 @@ import '../styles/global.css';
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
+	}
+	.title {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+		text-align: center;
+	}
+	.title h1 {
+		font-size: 3rem;
+		font-weight: 600;
+	}
+	.title h2 {
+		font-size: 2rem;
+		font-weight: 300;
+		white-space:nowrap;
+		margin: 0 auto;
 	}
 	.astro-a {
 		position: absolute;
@@ -132,37 +155,41 @@ import '../styles/global.css';
 	.content {
 		display: flex;
 		justify-content: center;
-		/* flex-wrap: nowrap; */
+		align-items: center;
 		flex-direction: row;
-		padding: 5px;
-		border: 3px solid yellow
+		border: 3px solid yellow;
+		justify-items: center;
+		width: auto;
+		height: auto;
 	}
 
 	.content .item {
 		margin: 8%;
 	}
 	.content img {
-		width: 30vw;
-		height: auto;
-		
-		
+		width: 40vw;
 	}
 	.item {
 		text-align: left;
-		white-space: nowrap;
+		/* white-space: nowrap; */
 		border: 3px solid red;
 	}
-	.item p {
+	.item h1, h2, p, li {
+		width: 40vw;
+		height: auto;
 		font-size: 1.25em;
 	}
 @media screen and (max-width: 480px) {
 	.content {
 		flex-direction: column;
 	}
-	.img {
+	.content img {
 		width: 70vw;
 		height: auto;
 		justify-content: center;
+	}
+	.title h2 {
+		display: none;
 	}
 }
 </style>
