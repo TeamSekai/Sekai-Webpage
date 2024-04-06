@@ -14,7 +14,7 @@ import '../styles/global.css';
 			全てオープンソースで開発されており、ユーザー側の使いやすさと安定性を重視しています！</p>
 		</div>
 		<section class="project">
-			<h1>Sekai.Explode</h1>
+			<h1><a href="https://github.com/TeamSekai/Sekai.Explode">Sekai.Explode</a></h1>
 			<h3>Discord向けの高機能ボットです。</h3>
 		</section>
 		<section class="content">
@@ -42,6 +42,32 @@ import '../styles/global.css';
 					<p>Sekai.Explodeは常に開発が行われています。</p>
 					<p>よりよいボットにするためのアイデアが日々提案されており、<br>
 						TeamSekaiの中で最も活発なプロジェクトとなっています。</p>
+			</div>
+		</section>
+
+		<section class="project">
+			<h1><a href="https://github.com/TeamSekai/Sekai.CDN">Sekai.CDN</a></h1>
+			<h3>シンプルなCDNを構築できます。</h3>
+		</section>
+		<section class="content">
+			<div class="item">
+				<h2>Cloudflareの機能を利用したシンプルなCDN</h2>
+					<p>Cloudflare Cacheにより、全世界からデータを配信できます。</p>
+					<p>(Cloudflareのアカウントとドメインが必要です。)</p>
+			</div>
+			<div class="item">
+				<img src="assets/cf-cdn.png">
+			</div>
+		</section>
+		<section class="content">
+			<div class="item">
+				<h2>Sekai.Explodeからのアップロードも可能</h2>
+					<p>Discordから簡単に画像や動画をアップロードできます!</p>
+					<p>よりよいボットにするためのアイデアが日々提案されており、<br>
+						TeamSekaiの中で最も活発なプロジェクトとなっています。</p>
+			</div>
+			<div class="item">
+				<img src="assets/cdn-with-bot.jpg">
 			</div>
 		</section>
 		
@@ -102,6 +128,14 @@ import '../styles/global.css';
 	.project h3 {
 		font-size: 2rem;
 		margin-top: -1em;
+	}
+	.project a {
+		color:white;
+		transition: color 0.5s ease;
+		text-decoration: none;
+	}
+	.project a:hover {
+		color:#4fc7ff;
 	}
 	.astro-a {
 		position: absolute;
