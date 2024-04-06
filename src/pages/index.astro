@@ -9,13 +9,11 @@ import '../styles/global.css';
 			<h1><span>Sekai</span></h1>
 			<h2>-Make your life <span class="wave">better</span>-</h2>
 		</section>
-		
-		<!-- ごみ
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		-->
+		<div class="about">
+			<p>TeamSekaiは、様々なプロジェクトを制作しています。<br>
+			全てオープンソースで開発されており、ユーザー側の使いやすさと安定性を重視しています！</p>
+		</div>
+		<h1>Sekai.Explode</h1>
 		<section class="content">
 			<div class="item">
 				<img src="assets/commands.jpg">
@@ -34,11 +32,11 @@ import '../styles/global.css';
 		</section>
 		<section class="content">
 			<div class="item">
-				<img src="assets/commands.jpg">
+				<img src="assets/repobeats.svg">
 			</div>
 			<div class="item">
-				<h2>数え切れないほどのコマンド</h2>
-					<p>Sekai.Explodeには数え切れないほどの機能が搭載されています。</p>
+				<h2>活発な開発</h2>
+					<p>Sekai</p>
 					<li>グローバルBAN機能</li>
 					<li>音楽再生(YouTubeにも対応!)</li>
 					<li>サーバー/ユーザー情報表示</li>
@@ -71,6 +69,9 @@ import '../styles/global.css';
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
+		/* for dev(if need)
+		border: 3px solid gold;
+		*/
 	}
 	.title {
 		margin: auto;
@@ -177,7 +178,16 @@ import '../styles/global.css';
 	.content:nth-child(odd) {
 		flex-direction: row-reverse;
 	}
-@media screen and (max-width: 480px) {
+	.about {
+		
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		/* for dev(if need)
+		border: 3px solid red;
+		*/
+	}
+@media screen and (max-width: 810px) {
 	.content {
 		flex-direction: column;
 	}
@@ -189,6 +199,13 @@ import '../styles/global.css';
 		height: auto;
 		justify-content: center;
 		text-align: center;
+	}
+	.title h1 {
+		background: linear-gradient(to right,#ffffff,#ffffff,#ffffff,#ffffff,#4fc7ff,#ffffff,#ffffff,#ffffff) 0 / 200%;
+		height: 100%;
+		animation: 3s a linear infinite;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 	.title h2 {
 		display: none;
