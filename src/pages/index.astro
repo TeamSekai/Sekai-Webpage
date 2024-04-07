@@ -51,9 +51,9 @@ import '../styles/global.css';
 		</section>
 		<section class="content">
 			<div class="item">
-				<h2>Cloudflareの機能を利用したシンプルなCDN</h2>
-					<p>Cloudflare Cacheにより、全世界からデータを配信できます。</p>
-					<p>(Cloudflareのアカウントとドメインが必要です。)</p>
+				<h2>Cloudflareの機能を利用した<br>シンプルなCDN</h2>
+					<p>Cloudflare Cacheにより、全世界からデータを配信できます。<br>
+					(Cloudflareのアカウントとドメインが必要です。)</p>
 			</div>
 			<div class="item">
 				<img src="assets/cf-cdn.png">
@@ -62,12 +62,37 @@ import '../styles/global.css';
 		<section class="content">
 			<div class="item">
 				<h2>Sekai.Explodeからのアップロードも可能</h2>
-					<p>Discordから簡単に画像や動画をアップロードできます!</p>
-					<p>よりよいボットにするためのアイデアが日々提案されており、<br>
-						TeamSekaiの中で最も活発なプロジェクトとなっています。</p>
+					<p>Discordから簡単に画像や動画をアップロードできます!<br>
+					(Sekai.Explodeでの設定が必要です。)</p>
 			</div>
 			<div class="item">
 				<img src="assets/cdn-with-bot.jpg">
+			</div>
+		</section>
+
+		<section class="project">
+			<h1><a href="https://github.com/TeamSekai/TempLinkSrv">TempLinkSrv</a></h1>
+			<h3>短縮リンク用のサーバーです。</h3>
+		</section>
+		<section class="content">
+			<div class="item">
+				<img src="assets/hono.webp">
+			</div>
+			<div class="item">
+				<h2>Honoによる圧倒的なスピード。</h2>
+					<p>WebフレームワークにはHonoを使用。<br>
+					レスポンスの遅さに悩まされることはありません。</p>
+			</div>
+		</section>
+		<section class="content">
+			<div class="item">
+				<img src="assets/restapi.webp">
+			</div>
+			<div class="item">
+				<h2>簡単かつ高機能。</h2>
+					<p>REST APIにより簡単な操作を実現。<br>
+					TempLinkの有効期限もミリ秒単位で細かく設定可能です。<br>
+					DELETEリクエストであとから削除することも出来ます。</p>
 			</div>
 		</section>
 		
@@ -211,8 +236,14 @@ import '../styles/global.css';
 	.item h1, h2, p, li {
 		width: 40vw;
 		height: auto;
-		font-size: 1.25em;
+		/* font-size: 1.25em; */
 		text-align: center;
+	}
+	.item h2 {
+		font-size: 2em;
+	}
+	.item p, li {
+		font-size: 1.25em;
 	}
 	li {
 		list-style: none;
